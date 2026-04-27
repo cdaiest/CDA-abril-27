@@ -1,0 +1,7 @@
+{
+  "name": "Remix: Remix: Copy of Copy of Copy of DocenteFlix",
+  "description": "Una plataforma premium de streaming diseñada específicamente para docentes, permitiéndoles acceder a webinars, cursos y recursos educativos con una interfaz estilo Netflix y asistencia inteligente de IA.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

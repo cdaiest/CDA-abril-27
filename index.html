@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinación de Desarrollo Académico</title>
+    <link rel="icon" href="https://res.cloudinary.com/dsmvoemnu/image/upload/v1768591433/iest_ipveaj.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <style>
+        :root {
+            /* DARK MODE (DEFAULT) */
+            --bg-main: #13161C;
+            --bg-main-rgb: 19 22 28;
+
+            --bg-card: #1C2129;
+            --bg-card-rgb: 28 33 41;
+
+            --bg-element: #252A33;
+            --bg-element-rgb: 37 42 51;
+
+            --text-primary: #ffffff;
+            --text-secondary: #cbd5e1;
+            /* slate-300 */
+            --text-tertiary: #94a3b8;
+            /* slate-400 */
+
+            --border-color: #1e293b;
+            /* slate-800 */
+            --border-hover: #334155;
+            /* slate-700 */
+        }
+
+        body.light {
+            /* LIGHT MODE */
+            --bg-main: #ffffff;
+            --bg-main-rgb: 255 255 255;
+
+            --bg-card: #f8fafc;
+            /* slate-50 */
+            --bg-card-rgb: 248 250 252;
+
+            --bg-element: #f1f5f9;
+            /* slate-100 */
+            --bg-element-rgb: 241 245 249;
+
+            --text-primary: #0f172a;
+            /* slate-900 */
+            --text-secondary: #475569;
+            /* slate-600 */
+            --text-tertiary: #64748b;
+            /* slate-500 */
+
+            --border-color: #e2e8f0;
+            /* slate-200 */
+            --border-hover: #cbd5e1;
+            /* slate-300 */
+        }
+
+        html {
+            font-size: 100%;
+            /* 16px Base */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            margin: 0;
+            overflow-x: hidden;
+            font-weight: 400;
+            line-height: 1.6;
+            /* Improved Readability */
+            font-size: 1rem;
+            /* 16px */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 600;
+            line-height: 1.2;
+            /* Tighter leading for headings */
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-main);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-hover);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #F24405;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Material Symbols Utility */
+        .material-symbols-rounded {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .content-protected {
+            -webkit-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+
+        .content-protected input,
+        .content-protected textarea,
+        .content-protected [contenteditable="true"],
+        .allow-select {
+            -webkit-user-select: text;
+            user-select: text;
+            -webkit-touch-callout: default;
+        }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "react-dom": "https://esm.sh/react-dom@^19.2.4"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
